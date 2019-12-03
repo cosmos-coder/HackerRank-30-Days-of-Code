@@ -10,7 +10,7 @@ class Calculator:
 
     def power(self, n, p):
         if n < 0 or p < 0:
-            raise InputError("n and p should be non-negative")
+            raise ValueError("n and p should be non-negative") #for InputValue Error it may produce an error
         else:
             return n**p
 			
